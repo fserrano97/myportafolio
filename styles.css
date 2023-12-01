@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Amita&family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=Kalam&family=Literata:ital,opsz,wght@1,7..72,200&family=PT+Sans+Caption&family=Rowdies:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+  
+body{
+    
+	color: #343434;
+	 background: #ffffff;
+	
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+     /* nos permite definir de que manera vamos a calcular  el tamaño total de nuestro elemento
+    
+     elemento{
+        box-sizing: boder-box; respeta el with que establezcamos nosotros.
+        
+        box-sozing: content-box; suma al with el padding y el borde
+
+     */
+    }
+/* BARRA DE NAVEGACION */
+     header{
+        background: #ac69c8;
+        height: 61px;
+        padding: 12px;
+        box-shadow: 0 0 29px 0 rgb(134 134 134);
+    }
+    @media screen and (max-width: 600px) {
+        .ocultar-div{
+            display:none;
+        }
+    }
+  
+nav ul {
+	float: right;
+	
+}
+nav ul li{
+	display: inline-block;
+    margin: 10px;
+}
+nav ul li a {
+	text-decoration: none;
+	/* padding:6px; */
+	color: #212121;
+	font-weight: bold;
+    font-family: sans-serif;
+}
+a:HOVER{/* diseño al apretar o pasar  por encima la flechita del mouse */
+    /*background-color: #fa6abe;/* color al apretar la flecha */
+    color: #fa6abe; /*color de la letra al apretar o pasar por encima la fechita */
+ }
+
+/* <!-- SECTION 1 PRESENTACION --> */
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card2{
+ padding: 30px;
+ margin: 20px;
+} 
+.imga{
+    width: 79%;
+    margin: 59px;
+
+} 
+
+h1{
+ font-size:50px;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ margin: 10px;
+ color: #343434;
+}
+h2{
+ font-size:90px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ color: #ac69c8a5;
+ 
+ padding: 0px;
+}
+p{
+ font-size: 17px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.boton{
+ border: #d6d6d6;
+ padding: 20px;
+background-color: rgb(172 105 200);
+display: inline-block;
+text-decoration: none;
+color: rgb(253, 253, 253);
+font-weight: bolder;
+border-radius: 20px;
+margin-top: 10px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.boton:HOVER{/* diseño al apretar o pasar  por encima la flechita del mouse */
+   background-color: #fa6abe;/* color al apretar la flecha */
+     color: #ffffff; /*color de la letra al apretar o pasar por encima la fechita */
+
+
+}
+/* SECTION 2 CONOCIMIENTOS */
+.hab-sec{
+    background-color: #f6f7fb;
+}
+.section1{     display: flex;
+    justify-content: space-evenly;
+    padding: 110px 40px 130px;
+    text-align: left;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    padding: 110px 40px 130px;
+    text-align: left;
+    flex-wrap: wrap;
+
+}
+.column{
+    width: 100%;
+    max-width: 1100px;
+}
+.columna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-title{
+    font-size: 50px;
+    font-weight: 900;
+    padding: 20px;
+    font-weight: bold;
+    color: #763691;
+    
+}
+.seccion-title-p{
+    max-width: 900px;
+    line-height: 1.4;
+    padding: 15px;
+    font-size: 17px;
+    margin: 20px;
+    text-align: center;
+}
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.item{
+    width:37%;
+    color: #763691;
+    margin: 15px;
+    padding: 15px;
+    border-style: groove;
+    border-color: #ac69c8;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+.item:HOVER {
+    /* diseño al apretar o pasar  por encima la flechita del mouse */
+    border-color: #fa6abe;/* color al pasar la flecha */
+      color: #fa6abe;/*color de la letra al apretar o pasar por encima la fechita */
+      
+ }
+.icono{
+    width: 50%;
+}
+.texto-p{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+ .section3{
+    background-color: #ac69c8;
+    display: flex;
+    justify-content: center;
+    padding: 110px 40px 130px;
+    text-align: center;
+ }
+ .container-s3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .img-s3{
+    margin: 30px;
+    width: 10%;
+ }
+ .frase-s3{
+    font-size: 35px;
+    font-family: math;
+    margin: 20px;
+    font-weight: bold;
+ }
+ .autor-s3{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+ }
+ .container-card-s4{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+ 
+    justify-content: space-around;
+}
+.item4{
+    width:25%;
+
+    margin: 15px;
+    padding: 15px;
+    border-style: groove;
+    border-color: #ac69c8;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+.item4:HOVER {
+  
+    border-color: #fa6abe;
+      /* color: #ff0000; */
+      
+ }
+ .section5{
+    background-color: #f6f7fb;
+    padding-top: 200px;
+ }
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: #ffffff;
+  
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    padding: 19px;
+   
+    align-content: center;
+}
+.contacto-columna{
+    padding: 20px;
+}
+
+.contact-column {
+    width: 50%;}
+
+.parrafos5{
+        max-width: 400px;
+    }
+.contacto-link{
+        margin-top: 40px;
+        transition: 0.2s;
+        padding: 0px;
+    }
+.contacto-social-items{
+        display: flex;
+    margin: 5px 0;
+    }
+.enlaces{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+
+}
+a{
+    text-decoration: none;
+    color: #2e2e31;
+}
+.icono-enlaces{
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #fff;
+    color: #8338ec;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin-right: 10px;
+    text-align: center;
+    transition: 0.2s;
+}
+.enlaces:HOVER {
+  
+    border-color: #fa6abe;
+      color: #fa6abe;
+      
+ }
+ h3{
+    font-size: 30px;
+    color: #ac69c8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+ }
+ .input-name-wrapper{
+    display: flex;
+    margin-right: 10px;
+}
+.form-control{
+    margin-bottom: 15px;
+    flex-grow: 1;
+    position: relative;
+}
+label{
+   margin: 10px;
+    display: block;
+    font-weight: bolder;
+}
+input, textarea {
+    border: 0;
+    border-radius: 20px;
+    background-color: #ff83e459;
+    border: 1px solid #f6f7fb;
+    font-size: var(--text-sm);
+    padding: 10px 15px;
+    display: block;
+    width: 80%;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.2s;
+ }
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 60px;
+    background-color: #8338ec;
+    color: white;
+
+}
+.footer-nav-menu {
+    display: flex;
+    margin: 0;
+}
+.footer-nav-link {
+    font-size: 14px;
+    color: white;
+}
+.footer-nav-item {
+    margin: 0 10px;
+}
+.footer-social-links {
+    display: flex;
+    margin: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
